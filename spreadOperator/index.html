@@ -1,0 +1,43 @@
+<div>
+
+</div>
+<script>
+
+  // 스프레이드는 해체
+  // ... 어레이 >괄호 제거 어레이를 합치거나 복사할때 유용
+  // ... 문자 > 모두 띄어쓰기 문자도 어레이처럼 인덱싱이 가능
+  var 어레이 = ['hello', 'world'];
+  console.log(어레이);
+  console.log(...어레이);
+
+  var 문자 = 'hello';
+
+  console.log(문자);
+  console.log(...문자);
+
+  var a = [1,2,3];
+  var b = [4,5];
+  console.log(...a,...b);
+
+  // 각각 독립적인 값을 가지도록 어레이 오브젝트를 복사하기 위해 사용
+
+  var c = [6,7,8];
+  var d = [...c];
+
+  c[3] = 4;
+
+  console.log(c);
+  console.log(d);
+
+  // 함수 파라미터 넣을때
+
+  function 더하기 (a,b,c) {
+    console.log(a+b+c);
+  }
+
+  var 어레이 = [10,20,30];
+
+  더하기(어레이[0],어레이[1],어레이[2])
+  더하기(...어레이);
+
+</script>

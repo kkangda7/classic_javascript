@@ -1,0 +1,22 @@
+<div>
+  d
+</div>
+<script>
+  //apply적용하다 함수
+  //call불러오다 함수 apply와 비슷하나 apply는 파라미터를 넣을때 어레이형태, call은 콤마
+
+  var person = {
+    인사 : function() {
+      console.log(this.name + '안녕');
+    }
+  }
+  person.인사();
+
+  var person2 = {
+    name : '손흥민'
+  };
+
+  person.인사.apply(person2 , [1,2]);
+  person.인사.call(person2,1,2);
+
+</script>

@@ -1,0 +1,22 @@
+<div>
+
+</div>
+
+<script>
+  let a = 1;
+  var b = 2;
+  
+  window.a = 3;
+  window.b = 4;
+
+  console.log(a+b);
+
+
+  // 재선언, 힐딩, 범위, 호이스팅(변수의 선언을 변수 범위 맨위로 끌고오는 현상), 전역변수(모든곳에서 쓸수 있는 변수)
+
+  // 재선언  :var o let, const x
+  // 재할당  :var,let 0 const x 변할지 않는값
+  // 단 const도 오브젝트안에 값을 변경하면 에러가 나지 않음 ex) const 사람 = { 이름 : 'kim'}  사람 = 'park'
+  // Object.freeze(사람) >> 오브젝트를 변경하지 못하게 하는 문법
+  // 범위  : var눈 function 안에서 존재, let,const 즁가로안에서{} 존재
+</script>
